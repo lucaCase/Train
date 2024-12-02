@@ -1,0 +1,260 @@
+[
+  {
+    "weekday": "Monday",
+    "exercises": [
+      {
+        "name": "Incline Dumbbell Press",
+        "parts": [
+          "Upper Chest"
+        ],
+        "description": "Adjust tempo: Lower the dumbbells slowly (3 seconds), then press up explosively.",
+        "sets": 3,
+        "reps": 12,
+        "weight": 12,
+        "rest": 120
+      },
+      {
+        "name": "Chair Dips",
+        "parts": [
+          "Triceps",
+          "Chest"
+        ],
+        "description": "Add resistance by placing a weight on your lap or slowing the tempo.",
+        "sets": 3,
+        "reps": 12,
+        "rest": 90
+      },
+      {
+        "name": "Dumbbell Shoulder Press",
+        "parts": [
+          "Deltoids"
+        ],
+        "description": "Ensure strict form keeping elbows slightly in front of your body",
+        "sets": 3,
+        "reps": 12,
+        "weight": 5,
+        "rest": 90
+      },
+      {
+        "name": "Push-Ups",
+        "parts": [
+            "Chest",
+            "Triceps",
+            "Shoulders"
+        ],
+        "description": "Add weight by wearing a backpack with dumbbells or elevating your feet for more challenge",
+        "sets": 3,
+        "toFailure": true,
+        "rest": 120
+      }
+    ]
+  },
+  {
+    "weekday": "Tuesday",
+    "exercises": [
+      {
+        "name": "Goble Squats",
+        "parts": [
+          "Quads",
+          "Glutes",
+          "Calves"
+        ],
+        "description": "Hold a dumbbell at chest level to increase resistance",
+        "sets": 3,
+        "reps": 12,
+        "weight": 12,
+        "rest": 120
+      },
+      {
+        "name": "Romanian Deadlifts",
+        "parts": [
+          "Hamstrings",
+          "Glutes"
+        ],
+        "sets": 3,
+        "reps": 12,
+        "weight": 12,
+        "rest": 90
+      },
+      {
+        "name": "Dumbbell Step-Ups",
+        "parts": [
+          "Quads",
+          "Glutes"
+        ],
+        "description": "Use a sturdy chair or elevated surface, 10 reps per leg",
+        "sets": 3,
+        "reps": 20,
+        "weight": 12,
+        "rest": 120
+      },
+      {
+        "name": "Calf Raises (Calves)",
+        "parts": [
+          "Calves"
+        ],
+        "sets": 3,
+        "reps": 20,
+        "weight": 12,
+        "rest": 120
+      }
+    ]
+  },
+  {
+    "weekday": "Wednesday",
+    "exercises": []
+  },
+  {
+    "weekday": "Thursday",
+    "exercises": [
+      {
+        "name": "Bent-Over Dumbbell Rows",
+        "parts": [
+          "Lats",
+          "Rhomboids",
+          "Rear Delts"
+        ],
+        "sets": 3,
+        "reps": 12,
+        "weight": 12,
+        "rest": 120
+      },
+      {
+        "name": "Reverse Flyes",
+        "parts": [
+            "Rear Delts",
+            "Upper Back"
+        ],
+        "sets": 3,
+        "reps": 12,
+        "weight": 5,
+        "rest": 90
+      },
+      {
+        "name": "Bicep Curls",
+        "parts": [
+            "Biceps"
+        ],
+        "description": "Use 5kg for controlled reps or 12kg for fewer, heavier reps)",
+        "sets": 3,
+        "reps": 12,
+        "weight": 5,
+        "rest": 90
+      },
+      {
+        "name": "Plank with Dumbbell Row",
+        "parts": [
+            "Core",
+            "Lats"
+        ],
+        "description": "10 reps per side",
+        "sets": 3,
+        "reps": 20,
+        "weight": 5,
+        "rest": 120
+      }
+    ]
+  },
+  {
+    "weekday": "Friday",
+    "exercises": [
+      {
+        "name": "Dumbbell Thrusters",
+        "parts": [
+          "Shoulders"
+        ],
+        "description": "Use 5kg for controlled reps or 12kg for fewer, heavier reps)",
+        "sets": 3,
+        "reps": 12,
+        "weight": 5,
+        "rest": 120
+      },
+      {
+        "name": "Romanian Deadlifts",
+        "parts": [
+            "Hamstrings",
+            "Glutes"
+        ],
+        "sets": 3,
+        "reps": 12,
+        "weight": 12,
+        "rest": 120
+      },
+      {
+        "name": "Push-Up with Dumbbell Row",
+        "parts": [
+            "Chest",
+            "Core",
+            "Lats"
+        ],
+        "sets": 3,
+        "reps": 12,
+        "weight": 5,
+        "rest": 90
+      },
+      {
+        "name": "Russian Twists",
+        "parts": [
+          "Obliques"
+        ],
+        "sets": 3,
+        "reps": 20,
+        "weight": 5,
+        "rest": 90
+      }
+    ]
+  },
+  {
+    "weekday": "Saturday",
+    "exercises": [
+      {
+        "name": "Split Squats",
+        "parts": [
+          "Quads",
+          "Glutes"
+        ],
+        "description": "12 reps per leg",
+        "sets": 3,
+        "reps": 24,
+        "weight": 12,
+        "rest": 120
+      },
+      {
+        "name": "Dumbbell Romanian Deadlifts",
+        "parts": [
+            "Hamstrings",
+            "Glutes"
+        ],
+        "sets": 3,
+        "reps": 12,
+        "weight": 12,
+        "rest": 120
+      },
+      {
+        "name": "Lateral lunges (Inner Thighs, Glutes)",
+        "parts": [
+            "Inner Thighs",
+            "Glutes"
+        ],
+        "description": "12 reps per leg",
+        "sets": 3,
+        "reps": 24,
+        "weight": 12,
+        "rest": 120
+      },
+      {
+        "name": "Plank Hold",
+        "parts": [
+            "Core"
+        ],
+        "sets": 3,
+        "duration": 60,
+        "rest": 120
+      }
+    ]
+  },
+  {
+    "weekday": "Sunday",
+    "exercises": []
+  }
+]
