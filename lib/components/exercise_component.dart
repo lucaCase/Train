@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:train/components/body.dart';
 import 'package:train/services/exercise_service.dart';
 import '../dto/exercise.dart';
 
@@ -38,17 +39,7 @@ class ExerciseComponent extends StatelessWidget {
                           const SizedBox(height: 16),
                           const Text("Addressed muscle groups:", textAlign: TextAlign.start, style: TextStyle(fontSize: 14),),
                           const SizedBox(height: 8),
-                          Wrap(
-                            alignment: WrapAlignment.center,
-                            children: exercise.parts!
-                                .map((muscleGroup) => Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Chip(
-                                        label: Text(muscleGroup),
-                                      ),
-                                    ))
-                                .toList(),
-                          ),
+                          Body(groups: exercise.parts!),
                         Text(ExerciseService.assembleExerciseString(exercise), style: const TextStyle(fontSize: 16),)
                         ],
                       ),

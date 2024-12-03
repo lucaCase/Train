@@ -5,7 +5,7 @@
       {
         "name": "Incline Dumbbell Press",
         "parts": [
-          "Upper Chest"
+          "chest"
         ],
         "description": "Adjust tempo: Lower the dumbbells slowly (3 seconds), then press up explosively.",
         "sets": 3,
@@ -16,8 +16,8 @@
       {
         "name": "Chair Dips",
         "parts": [
-          "Triceps",
-          "Chest"
+          "triceps",
+          "chest"
         ],
         "description": "Add resistance by placing a weight on your lap or slowing the tempo.",
         "sets": 3,
@@ -27,7 +27,7 @@
       {
         "name": "Dumbbell Shoulder Press",
         "parts": [
-          "Deltoids"
+          "shoulder"
         ],
         "description": "Ensure strict form keeping elbows slightly in front of your body",
         "sets": 3,
@@ -38,9 +38,9 @@
       {
         "name": "Push-Ups",
         "parts": [
-            "Chest",
-            "Triceps",
-            "Shoulders"
+            "chest",
+            "triceps",
+            "shoulder"
         ],
         "description": "Add weight by wearing a backpack with dumbbells or elevating your feet for more challenge",
         "sets": 3,
@@ -55,9 +55,9 @@
       {
         "name": "Goble Squats",
         "parts": [
-          "Quads",
-          "Glutes",
-          "Calves"
+          "quads",
+          "glutes",
+          "calves"
         ],
         "description": "Hold a dumbbell at chest level to increase resistance",
         "sets": 3,
@@ -68,8 +68,8 @@
       {
         "name": "Romanian Deadlifts",
         "parts": [
-          "Hamstrings",
-          "Glutes"
+          "harmstrings",
+          "glutes"
         ],
         "sets": 3,
         "reps": 12,
@@ -79,8 +79,8 @@
       {
         "name": "Dumbbell Step-Ups",
         "parts": [
-          "Quads",
-          "Glutes"
+          "quads",
+          "glutes"
         ],
         "description": "Use a sturdy chair or elevated surface, 10 reps per leg",
         "sets": 3,
@@ -91,7 +91,7 @@
       {
         "name": "Calf Raises (Calves)",
         "parts": [
-          "Calves"
+          "calves"
         ],
         "sets": 3,
         "reps": 20,
@@ -110,9 +110,9 @@
       {
         "name": "Bent-Over Dumbbell Rows",
         "parts": [
-          "Lats",
-          "Rhomboids",
-          "Rear Delts"
+          "lats",
+          "trapezius",
+          "lats"
         ],
         "sets": 3,
         "reps": 12,
@@ -122,8 +122,8 @@
       {
         "name": "Reverse Flyes",
         "parts": [
-            "Rear Delts",
-            "Upper Back"
+            "lats",
+            "trapezius"
         ],
         "sets": 3,
         "reps": 12,
@@ -133,7 +133,7 @@
       {
         "name": "Bicep Curls",
         "parts": [
-            "Biceps"
+            "biceps"
         ],
         "description": "Use 5kg for controlled reps or 12kg for fewer, heavier reps)",
         "sets": 3,
@@ -144,8 +144,8 @@
       {
         "name": "Plank with Dumbbell Row",
         "parts": [
-            "Core",
-            "Lats"
+            "abs",
+            "lats"
         ],
         "description": "10 reps per side",
         "sets": 3,
@@ -161,7 +161,7 @@
       {
         "name": "Dumbbell Thrusters",
         "parts": [
-          "Shoulders"
+          "shoulder"
         ],
         "description": "Use 5kg for controlled reps or 12kg for fewer, heavier reps)",
         "sets": 3,
@@ -172,8 +172,8 @@
       {
         "name": "Romanian Deadlifts",
         "parts": [
-            "Hamstrings",
-            "Glutes"
+            "harmstrings",
+            "glutes"
         ],
         "sets": 3,
         "reps": 12,
@@ -183,9 +183,9 @@
       {
         "name": "Push-Up with Dumbbell Row",
         "parts": [
-            "Chest",
-            "Core",
-            "Lats"
+            "chest",
+            "abs",
+            "lats"
         ],
         "sets": 3,
         "reps": 12,
@@ -195,7 +195,7 @@
       {
         "name": "Russian Twists",
         "parts": [
-          "Obliques"
+          "obliques"
         ],
         "sets": 3,
         "reps": 20,
@@ -210,8 +210,8 @@
       {
         "name": "Split Squats",
         "parts": [
-          "Quads",
-          "Glutes"
+          "quads",
+          "glutes"
         ],
         "description": "12 reps per leg",
         "sets": 3,
@@ -222,8 +222,8 @@
       {
         "name": "Dumbbell Romanian Deadlifts",
         "parts": [
-            "Hamstrings",
-            "Glutes"
+            "harmstrings",
+            "glutes"
         ],
         "sets": 3,
         "reps": 12,
@@ -233,8 +233,8 @@
       {
         "name": "Lateral lunges (Inner Thighs, Glutes)",
         "parts": [
-            "Inner Thighs",
-            "Glutes"
+            "adductors",
+            "glutes"
         ],
         "description": "12 reps per leg",
         "sets": 3,
@@ -245,7 +245,7 @@
       {
         "name": "Plank Hold",
         "parts": [
-            "Core"
+            "abs"
         ],
         "sets": 3,
         "duration": 60,

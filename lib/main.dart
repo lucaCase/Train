@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:train/pages/playground.dart';
 import 'package:train/pages/workout_start.dart';
 
 import 'common/routes.dart';
@@ -22,9 +23,10 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialRoute: "/",
+      initialRoute: mainRoute,
       routes: {
         mainRoute: (context) => Main(),
+        "/playground": (context) => Playground(),
         workoutStartRoute: (context) => const WorkoutStart(),
         calendarRoute: (context) => const Calendar(),
       },
