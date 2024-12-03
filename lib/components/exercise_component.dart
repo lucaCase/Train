@@ -20,9 +20,39 @@ class ExerciseComponent extends StatelessWidget {
                   title: Text(
                     exercise.name,
                     textAlign: TextAlign.center,
-                    style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                        fontSize: 20, fontWeight: FontWeight.bold),
                   ),
-                  content: ,
+                  content: Column(mainAxisSize: MainAxisSize.min, children: [
+                    if (exercise.description != null)
+                      Text(
+                        exercise.description!,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
+                    if (exercise.parts != null)
+                      Column(
+                        children: [
+                          const SizedBox(height: 16),
+                          const Text("Addressed muscle groups:", textAlign: TextAlign.start, style: TextStyle(fontSize: 14),),
+                          const SizedBox(height: 8),
+                          Wrap(
+                            alignment: WrapAlignment.center,
+                            children: exercise.parts!
+                                .map((muscleGroup) => Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Chip(
+                                        label: Text(muscleGroup),
+                                      ),
+                                    ))
+                                .toList(),
+                          ),
+                        Text(ExerciseService.assembleExerciseString(exercise), style: const TextStyle(fontSize: 16),)
+                        ],
+                      ),
+                  ]),
                 );
               });
         },

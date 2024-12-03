@@ -12,6 +12,10 @@ class ExerciseService {
       baseString += " - ${exercise.weight}kg";
     }
 
+    if (exercise.toFailure) {
+      baseString += " until failure";
+    }
+
     return baseString;
   }
 }

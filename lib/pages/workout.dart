@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:train/common/routes.dart';
 import 'package:train/components/exercise_component.dart';
 import 'package:train/dto/exercise.dart';
 import 'package:train/services/workout_service.dart';
@@ -80,7 +81,9 @@ class _WorkoutState extends State<Workout> with WidgetsBindingObserver {
 
                     return Column(
                       children: [
-                        StyledButton(onPressed: () {}, text: "Start workout",),
+                        StyledButton(onPressed: () {
+                          Navigator.of(context).pushNamed(workoutStartRoute);
+                        }, text: "Start workout",),
                         ...exercises.map((exercise) => ExerciseComponent(exercise: exercise)),
                       ],
                     );

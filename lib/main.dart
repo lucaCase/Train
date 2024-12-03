@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:train/pages/workout_start.dart';
 
+import 'common/routes.dart';
 import 'pages/calendar.dart';
 import 'pages/main.dart';
 
@@ -22,8 +24,9 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: "/",
       routes: {
-        '/': (context) => Main(),
-        '/calendar': (context) => const Calendar(),
+        mainRoute: (context) => Main(),
+        workoutStartRoute: (context) => const WorkoutStart(),
+        calendarRoute: (context) => const Calendar(),
       },
     );
   }
