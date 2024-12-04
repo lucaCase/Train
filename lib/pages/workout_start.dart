@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:train/common/routes.dart';
 import 'package:train/dto/exercise.dart';
+import 'package:wakelock_plus/wakelock_plus.dart';
 
 class WorkoutStart extends StatelessWidget {
   const WorkoutStart({super.key});
 
   @override
   Widget build(BuildContext context) {
+    WakelockPlus.enable();
+
     Future.delayed(const Duration(milliseconds: 4250), () {
       if (context.mounted) {
         Navigator.of(context).pop();
@@ -50,7 +53,7 @@ class WorkoutStart extends StatelessWidget {
                         "Let's",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 150,
+                          fontSize: 100,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -62,7 +65,7 @@ class WorkoutStart extends StatelessWidget {
                         "Begin",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 150,
+                          fontSize: 100,
                           fontWeight: FontWeight.bold,
                         ),
                       ),

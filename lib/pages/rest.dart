@@ -1,18 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:vibration/vibration.dart';
 
-class Rest extends StatelessWidget {
+class Rest extends StatefulWidget {
   Rest({super.key});
 
+  @override
+  State<Rest> createState() => _RestState();
+}
+
+class _RestState extends State<Rest> {
   int duration = 0;
+  static const vibrationDuration = 500;
 
   @override
   Widget build(BuildContext context) {
     duration = ModalRoute.of(context)!.settings.arguments as int;
 
-    Future.delayed(Duration(seconds: duration), () {
-      if (context.mounted) {
-        Navigator.of(context).pop();
-      }
+
+    Future.delayed(Duration(seconds: duration), () async {
+        if ((await Vibration.hasVibrator() ?? false)) {
+          Vibration.vibrate(duration: vibrationDuration, amplitude: 120);
+          Future.delayed(const Duration(milliseconds: vibrationDuration), () {
+            if (context.mounted) {
+              Navigator.of(context).pop();
+            }
+          });
+        }
     });
 
     return PopScope(

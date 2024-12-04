@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.6
   http: ^1.2.2
   muscle_selector: ^1.0.3
+  vibration: ^1.7.6
+  wakelock_plus: ^1.2.8
 
 
 dev_dependencies:
