@@ -66,7 +66,7 @@ class _WorkoutState extends State<Workout> with WidgetsBindingObserver {
                     throw snapshot.error!;
                   } else {
                     List<Exercise> exercises = snapshot
-                        .data![DateTime.now().weekday - 1]
+                        .data![DateTime.now().weekday - 2]
                         .exercises;
                     bool isWorkoutToday = exercises
                         .isNotEmpty;
@@ -82,7 +82,7 @@ class _WorkoutState extends State<Workout> with WidgetsBindingObserver {
                     return Column(
                       children: [
                         StyledButton(onPressed: () {
-                          Navigator.of(context).pushNamed(workoutStartRoute);
+                          Navigator.of(context).pushNamed(workoutStartRoute, arguments: exercises);
                         }, text: "Start workout",),
                         ...exercises.map((exercise) => ExerciseComponent(exercise: exercise)),
                       ],

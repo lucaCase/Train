@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:train/pages/playground.dart';
+import 'package:train/pages/rest.dart';
+import 'package:train/pages/train.dart';
 import 'package:train/pages/workout_start.dart';
 
 import 'common/routes.dart';
@@ -13,7 +15,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,6 +29,8 @@ class MyApp extends StatelessWidget {
         mainRoute: (context) => Main(),
         "/playground": (context) => Playground(),
         workoutStartRoute: (context) => const WorkoutStart(),
+        restRoute: (context) => Rest(),
+        trainRoute: (context) => const Train(),
         calendarRoute: (context) => const Calendar(),
       },
     );
