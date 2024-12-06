@@ -3,6 +3,8 @@ import 'package:train/common/routes.dart';
 import 'package:train/components/circle_button.dart';
 import 'package:train/dto/exercise.dart';
 
+import '../dto/result.dart';
+
 class Train extends StatefulWidget {
   const Train({super.key});
 
@@ -14,6 +16,14 @@ class _TrainState extends State<Train> {
   List<Exercise> exercises = [];
   int currentExerciseIndex = 0;
   int currentSet = 1;
+  List<Result> results = [];
+  Stopwatch stopWatch = Stopwatch();
+
+  @override
+  void initState() {
+    super.initState();
+    stopWatch.start();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -51,28 +61,33 @@ class _TrainState extends State<Train> {
             ),
             CircleButton(
               onPressed: () {
+                results.add(Result(
+                    exerciseName: exercises[currentExerciseIndex].name,
+                    duration: stopWatch.elapsedMilliseconds,
+                    set: currentSet));
+                stopWatch.reset();
                 setState(() {
                   if (currentSet < exercises[currentExerciseIndex].sets) {
                     currentSet++;
+                    _navigateToRest();
                   } else {
                     currentSet = 1;
                     if (currentExerciseIndex < exercises.length - 1) {
                       currentExerciseIndex++;
+                      _navigateToRest();
                     } else {
-                      Navigator.of(context).pop();
-                      return;
+                      Navigator.of(context)
+                          .pushNamed(resultRoute, arguments: results);
                     }
                   }
-
                 });
-                print("HALLO");
-                Navigator.of(context).pushNamed(restRoute,
-                    arguments: exercises[currentExerciseIndex].rest);
               },
               icon: Icons.done,
             ),
             Text(
-              currentExerciseIndex + 1 < exercises.length ? 'Next: ${exercises[currentExerciseIndex + 1].name}' : "",
+              currentExerciseIndex + 1 < exercises.length
+                  ? 'Next: ${exercises[currentExerciseIndex + 1].name}'
+                  : "",
               textAlign: TextAlign.center,
               style: const TextStyle(
                   color: Colors.white,
@@ -83,5 +98,14 @@ class _TrainState extends State<Train> {
         ),
       ),
     );
+  }
+
+  void _navigateToRest() {
+    Navigator.of(context)
+        .pushNamed(restRoute, arguments: exercises[currentExerciseIndex].rest)
+        .then((_) {
+      stopWatch.start();
+      print("Hello");
+    });
   }
 }

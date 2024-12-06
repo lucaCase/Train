@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:train/dto/quote.dart';
 import 'package:train/pages/quotes.dart';
 import 'package:train/pages/workout.dart';
-import 'package:train/services/weekday_service.dart';
 
 import '../services/quote_service.dart';
 
@@ -48,7 +47,7 @@ class _MainState extends State<Main> {
             Quotes(
               quote: quote!,
             ),
-            Workout(),
+            const Workout(),
           ],
         ),
       ),

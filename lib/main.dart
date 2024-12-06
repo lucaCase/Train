@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:train/pages/playground.dart';
 import 'package:train/pages/rest.dart';
+import 'package:train/pages/results.dart';
 import 'package:train/pages/train.dart';
 import 'package:train/pages/workout_start.dart';
 
@@ -32,6 +33,8 @@ class MyApp extends StatelessWidget {
         restRoute: (context) => Rest(),
         trainRoute: (context) => const Train(),
         calendarRoute: (context) => const Calendar(),
+        resultRoute: (context) => const Results()
+
       },
     );
   }

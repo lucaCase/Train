@@ -66,7 +66,7 @@ class _WorkoutState extends State<Workout> with WidgetsBindingObserver {
                     throw snapshot.error!;
                   } else {
                     List<Exercise> exercises = snapshot
-                        .data![DateTime.now().weekday - 2]
+                        .data![DateTime.now().weekday - 1]
                         .exercises;
                     bool isWorkoutToday = exercises
                         .isNotEmpty;
